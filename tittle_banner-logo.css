@@ -1,0 +1,53 @@
+/*Alternate itempage*/
+
+.itemBackdrop {
+  height: 31vh !important;
+  display: inherit;
+}
+.detailLogo {
+  display: none;
+}
+.layout-desktop .detailRibbon {
+  margin-top: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.layout-desktop .detailImageContainer .card {
+  top: 18vh;
+}
+
+#itemDetailPage .detailLogo {
+  position: absolute;
+  left: 60vw;
+  margin-right: 10%;
+  display: block;
+  -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+  filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+  width: 64vw;
+  max-height: 21em;
+  height: 26vw;
+  top: 10em;
+  margin-bottom: 7.7em;
+  transform: translateX(-50%);
+}
+
+.layout-mobile .detailLogo {
+  display: none !important;
+}
+
+#itemDetailPage .itemName.infoText.parentNameLast {
+  display: none;
+}
+
+.hide + .detailPageWrapperContainer .itemName {
+  display: block !important;
+}
+
+.itemName {
+  margin: 0.5em 0 !important;
+}
+
+.layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
+  display: block;
+}
