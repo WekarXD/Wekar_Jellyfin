@@ -1,0 +1,47 @@
+    <div id="espacio-aviso" style="
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 975px;
+    background: #fff8dc;
+    color: #b00000;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 1em 1.2em;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    text-align: left;
+    z-index: 9999;
+    font-family: sans-serif;
+">
+        ⚠️ Debido a la falta de espacio, se va a automatizar que se eliminen los contenidos más antiguos que ya se hayan
+        reproducido.
+        <button id="cerrar-aviso-btn" style="
+        margin-top: 0.8em;
+        display: block;
+        background: #b00000;
+        color: white;
+        border: none;
+        padding: 0.4em 0.8em;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+    ">Entendido</button>
+    </div>
+
+    <script>
+        (function () {
+            if (!localStorage.getItem('embyAvisoEspacioOculto')) {
+                document.getElementById('espacio-aviso').style.display = 'block';
+            }
+
+            document.getElementById('cerrar-aviso-btn').addEventListener('click', function () {
+                document.getElementById('espacio-aviso').remove();
+                localStorage.setItem('embyAvisoEspacioOculto', 'true');
+            });
+        })();
+    </script>
