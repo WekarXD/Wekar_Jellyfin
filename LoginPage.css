@@ -1,0 +1,94 @@
+#loginPage {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url(https://w.wallhaven.cc/full/5y/wallhaven-5yd6d5.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#loginPage h1 {
+  display: none;
+}
+
+/* Form container styling */
+#loginPage .padded-left.padded-right.padded-bottom-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Box container */
+#loginPage .readOnlyContent,
+#loginPage form {
+  width: 100%;
+  max-width: 380px;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+}
+
+/* Input fields */
+#loginPage input[type="text"],
+#loginPage input[type="password"] {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+#loginPage .emby-button {
+  margin-top: 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Checkbox alignment */
+#loginPage .checkboxLabel {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+/* Optional: Fade-in effect */
+#loginPage .readOnlyContent {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ✅ Responsive Fix: Make sure it's centered on small screens */
+@media (max-width: 600px) {
+  #loginPage .readOnlyContent,
+  #loginPage form {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 10px;
+  }
+}
