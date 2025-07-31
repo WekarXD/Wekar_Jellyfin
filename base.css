@@ -1,5 +1,5 @@
 .backdropImage {
-  filter: blur(5px) saturate(120%) contrast(120%) brightness(50%);
+  filter: blur(10px) saturate(120%) contrast(120%) brightness(50%);
   animation: 0.2s ease-in-out both backdrop-fadein;
 }
 
@@ -15,6 +15,7 @@
 .layout-desktop .backgroundContainer {
   background: url(https://w.wallhaven.cc/full/5y/wallhaven-5yd6d5.png) no-repeat
     center center;
+  filter: blur(10px);
 }
 
 .layout-tv .backgroundContainer,

@@ -32,7 +32,7 @@
 /* Box container */
 #loginPage .readOnlyContent,
 #loginPage form,
-#loginPage .visualLoginPage {
+#loginPage .visualLoginForm {
   width: 100%;
   max-width: 380px;
   background-color: rgba(0, 0, 0, 0.4) !important;

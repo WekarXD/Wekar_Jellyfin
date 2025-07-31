@@ -1,5 +1,15 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400..700;1,400..700&display=swap);
+body,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
 :root {
-  --accent: rgb(151, 40, 185);
+  --FooterText: "Wekar v1.0";
+  --accent: 255, 255, 255;
   --rounding: 12px;
-  --indicator: rgb(95, 28, 116);
+  --indicator: 95, 28, 116;
 }
