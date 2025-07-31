@@ -16,6 +16,10 @@
   display: none;
 }
 
+#loginPage .squareCard {
+  width: 25%;
+}
+
 /* Form container styling */
 #loginPage .padded-left.padded-right.padded-bottom-page {
   display: flex;
@@ -27,7 +31,8 @@
 
 /* Box container */
 #loginPage .readOnlyContent,
-#loginPage form {
+#loginPage form,
+#loginPage .visualLoginPage {
   width: 100%;
   max-width: 380px;
   background-color: rgba(0, 0, 0, 0.4) !important;
